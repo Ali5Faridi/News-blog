@@ -1,0 +1,9 @@
+.env
+node_modules/
+#PORT=8000
+#MONGOOSE_CONNECT='mongodb+srv://alifaridi:NHgozxvhSo2VABDL@clusterblog.dol42.mongodb.net/?retryWrites=true&w=majority&appName=Clusterblog'
+#SECRET='hdcksNDSL5@fsr345ccQWDyzrrthrsthsr'
+#CLOUD_NAME=drdmsatm9
+#CLOUD_API_KEY=243848753823526
+#CLOUD_API_SECRET=6uazp1X6X8T7uqp7XaI1BT05_ME
+#API environment variable: CLOUDINARY_URL=cloudinary://243848753823526:6uazp1X6X8T7uqp7XaI1BT05_ME@drdmsatm9
