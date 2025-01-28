@@ -22,10 +22,6 @@ function RegisterPage() {
   }
   }
   
-
-
-
-
   return (
     <div>
       <form className='register' onSubmit={register}>
