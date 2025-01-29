@@ -182,14 +182,24 @@ app.use(cookieParser());
 app.use('/uploads', express.static('uploads'));
 
 // اتصال به دیتابیس
-mongoose.connect(process.env.MONGOOSE_CONNECT, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}).then(() => {
-  console.log('Database connected');
-}).catch((error) => {
-  console.error('Error connecting to the database', error);
-});
+// mongoose.connect(process.env.MONGOOSE_CONNECT, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// }).then(() => {
+//   console.log('Database connected');
+// }).catch((error) => {
+//   console.error('Error connecting to the database', error);
+// });
+
+mongoose.connect(process.env.MONGOOSE_CONNECT)
+
+  // .then(() => {
+  //   console.log('Database connected');
+  // })
+  // .catch((error) => {
+  //   console.error('Error connecting to the database', error);
+  // });
+
 
 // پیکربندی multer برای آپلود فایل‌ها
 const uploadMiddleware = multer({ dest: 'uploads/' });
