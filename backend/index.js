@@ -205,6 +205,7 @@ app.use(cookieParser());
 mongoose.connect(process.env.MONGOOSE_CONNECT)
   .then(() => console.log('✅ Connected to MongoDB'))
   .catch(error => console.error('❌ MongoDB Connection Error:', error));
+console.log(process.env.MONGOOSE_CONNECT);
 
 // **📌 ثبت‌نام کاربر**
 app.post('/register', async (req, res) => {
