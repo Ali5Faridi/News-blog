@@ -35,8 +35,10 @@ export default function PostPage() {
         </div>
       )}
       <div className="image">
-        <img src={`http://localhost:8000/${postInfo.cover}`} alt=""/>
-      </div>
+  <img src={postInfo.cover} alt="Post Cover" 
+    onError={(e) => { e.target.src = 'https://via.placeholder.com/600x400?text=No+Image'; }} />
+</div>
+
       <div className="content" dangerouslySetInnerHTML={{__html:postInfo.content}} />
     </div>
   );

@@ -84,3 +84,4 @@ function Post({_id, title, summary, createdAt, cover, content, author }) {
 }
 
 export default Post;
+
