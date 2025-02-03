@@ -1,23 +1,5 @@
-// import React from 'react'
-
-// function Footer() {
-//   return (
-//     <footer>
-//       <div className="footer-container">
-//         <p>&copy; 2025 News Blog. All rights reserved.</p>
-//         <nav>
-//           <a href="#">About Us</a>
-//           <a href="#">Privacy Policy</a>
-//           <a href="#">Contact</a>
-//         </nav>
-//       </div>
-//     </footer>
-//   )
-// }
-
-// export default Footer
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaXTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -29,17 +11,20 @@ function Footer() {
           <a href="#">Contact</a>
         </nav>
         <div className="social-icons">
-          <a href="#" aria-label="Facebook">
+          <a href="https://facebook.com" target="blank" className="facebook" aria-label="Facebook">
             <FaFacebook />
           </a>
-          <a href="#" aria-label="Twitter">
-            <FaTwitter />
+          <a href="https://x.com" target="blank" className="x" aria-label="X">
+            <FaXTwitter />
           </a>
-          <a href="#" aria-label="Instagram">
+          <a href="https://instagram.com" target="blank" className="instagram" aria-label="Instagram">
             <FaInstagram />
           </a>
-          <a href="#" aria-label="LinkedIn">
+          <a href="https://linkedin.com" target="blank" className="linkedin" aria-label="LinkedIn">
             <FaLinkedin />
+          </a>
+          <a href="https://youtube.com" target="blank" className="youtube" aria-label="Youtube">
+            <FaYoutube />
           </a>
         </div>
       </div>

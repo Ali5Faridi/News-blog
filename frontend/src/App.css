@@ -1,4 +1,3 @@
-
 *{
   box-sizing: border-box;
 }
@@ -192,26 +191,25 @@ footer {
   bottom: 0;
   z-index: 100;
   width: 100%;
+  margin-top: auto; /* Push footer to the bottom */
 }
+
 
 footer .footer-container {
   max-width: 960px;
   margin: 0 auto;
 }
-
-
 /* استایل کلی فوتر */
 .footer {
   position: sticky;
   bottom: 0;
   width: 100%;
-  background-color: #f8f9fa;
+  background-color: #F8F9FA;
   padding: 20px 10px;
   border-top: 1px solid #ddd;
   text-align: center;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .footer-container {
   max-width: 960px;
   height: 25px;
@@ -221,7 +219,6 @@ footer .footer-container {
   align-items: center;
   justify-content: center;
 }
-
 /* لینک‌های فوتر */
 .footer-container nav a {
   margin: 0 10px;
@@ -229,24 +226,57 @@ footer .footer-container {
   text-decoration: none;
   font-size: 0.9rem;
 }
-
 .footer-container nav a:hover {
   text-decoration: underline;
 }
-
 /* آیکون‌های شبکه‌های اجتماعی */
 .social-icons {
   display: flex;
-  gap: 200px; /* فاصله بین آیکون‌ها */
+  gap: 20px; /* فاصله بین آیکون‌ها */
 }
-
 .social-icons a {
-  color: #555;
   font-size: 1.9rem;
   transition: color 0.3s;
 }
+/* رنگ‌های رسمی هر شبکه اجتماعی */
+.social-icons .facebook {
+  color: #1877F2; /* آبی فیس‌بوک */
+}
+.social-icons .facebook:hover {
+  color: #125ABE;
+}
+.social-icons .x {
+  color: #000000; /* مشکی برای X */
+}
+.social-icons .x:hover {
+  color: #333333;
+}
+.social-icons .instagram {
+  color: #E4405F; /* گرادیانت اینستاگرام (از قرمز به صورتی) */
+}
+.social-icons .instagram:hover {
+  color: #C13584;
+}
+.social-icons .linkedin {
+  color: #0077B5; /* آبی لینکدین */
+}
+.social-icons .linkedin:hover {
+  color: #004F7C;
+}
+.social-icons .youtube {
+  color: #FF0000; /* قرمز یوتیوب */
+}
+.social-icons .youtube:hover {
+  color: #C1351D;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 10px; /* Further reduce gap for smaller screens */
+  }
 
-.social-icons a:hover {
-  color: #0077b5; /* رنگ آبی برای هاور */
+  .social-icons a {
+    font-size: 1.2rem; /* Smaller icons for mobile */
+  }
 }
 
