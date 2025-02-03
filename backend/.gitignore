@@ -1,5 +1,6 @@
 .env
 node_modules/
+
 #PORT=8000
 #MONGOOSE_CONNECT='mongodb+srv://alifaridi:79OS1vOiKp3uJS7D@cluster0.nx0xi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 #SECRET='hdcksNDSL5@fsr345ccQWDyzrrthrsthsr'
