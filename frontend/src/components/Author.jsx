@@ -9,7 +9,7 @@ const authors = [
     name: "Ali Asghar Faridi",
     image: faridiImage,
     description_en: "A software engineer specializing in full-stack development.",
-    description_de: "Ein Softwareingenieur, der sich auf Full-Stack-Entwicklung spezialisiert hat.",
+    description_de: "",
     Email: "ali.faridi@dci-student.org"
   },
   {
