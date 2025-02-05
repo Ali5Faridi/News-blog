@@ -350,4 +350,8 @@ div.post:hover {
   object-fit: cover; 
   border-radius: 50%;
 }
+.author-email {
+  text-decoration: none; /* Removes the underline */
+}
+
 

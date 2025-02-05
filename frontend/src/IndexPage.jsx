@@ -37,7 +37,7 @@ function IndexPage() {
     fetch('http://localhost:8000/post')
       .then(response => {
         if (!response.ok) {
-          throw new Error('خطا در دریافت داده‌ها');
+          throw new Error('Error fetching data');
         }
         return response.json();
       })
@@ -51,8 +51,8 @@ function IndexPage() {
       });
   }, []);
 
-  if (loading) return <p>در حال بارگذاری...</p>;
-  if (error) return <p style={{ color: 'red' }}>خطا: {error}</p>;
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p style={{ color: 'red' }}>Error: {error}</p>;
 
   return (
     <div>
@@ -61,7 +61,7 @@ function IndexPage() {
       {posts.length > 0 ? (
         posts.map(post => <Post key={post.id || post._id} {...post} />)
       ) : (
-        <p>هیچ پستی یافت نشد.</p>
+        <p>No posts found.</p>
       )}
     </div>
   );

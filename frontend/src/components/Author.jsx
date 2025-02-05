@@ -9,15 +9,18 @@ const authors = [
     _id: "6799391e208f32441523d5e1",
     name: "Ali Asghar Faridi",
     image: "../src/assets/faridi.jpg",
-    description_en: "I am a programmer trained in web development and passionate about software development.",
-    description_de: "Ich bin ein Programmierer, der in der Webentwicklung ausgebildet wurde und sich für Softwareentwicklung begeistert."
+    description_en: "A software engineer specializing in full-stack development",
+    description_de: "Ein Softwareingenieur, der sich auf Full-Stack-Entwicklung spezialisiert hat.",
+    Email: <a href="mailto:ali.faridi@dci-student.org" className='author-email'>ali.faridi@dci-student.org</a>
+
   },
   {
     _id: "679b38ff7601a6502d5c6bf6",
-    name: "mohammad",
+    name: "Mohammad",
     image: "../src/assets/mohamad.jpeg",
     description_en: "A software engineer specializing in full-stack development.",
-    description_de: "Ein Softwareingenieur, der sich auf Full-Stack-Entwicklung spezialisiert hat."
+    description_de: "Ein Softwareingenieur, der sich auf Full-Stack-Entwicklung spezialisiert hat.",
+    Email: <a href="mailto:ali.mohamad@dci-student.org" className='author-email'>mohamad@dci-student.org</a>
   }
 ];
 
@@ -39,6 +42,7 @@ function Author() {
       <h1 className="author-name">{author.name}</h1>
       <p className="author-description">{author.description_en}</p>
       <p className="author-description">{author.description_de}</p>
+      <p className="author-Email">{author.Email}</p>
     </div>
   );
 }
