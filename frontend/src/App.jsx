@@ -7,6 +7,7 @@ import RegisterPage from "./components/RegisterPage";
 import CreatePost from "./components/CreatePost";
 import PostPage from "./components/PostPage";
 import EditPost from "./components/EditPost";
+import Author from "./components/Author";
 import { UserProvider } from "./UserContext"; // وارد کردن UserProvider
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/create" element={<CreatePost />} />
           <Route path="/post/:id" element={<PostPage />} />
           <Route path="/edit/:id" element={<EditPost />} />
+          <Route path="/author/:id" element={<Author />} />
         </Route>
       </Routes>
     </UserProvider>
