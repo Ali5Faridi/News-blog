@@ -22,6 +22,7 @@ const authors = [
     description_de: "Ein Softwareingenieur, der sich auf Full-Stack-Entwicklung spezialisiert hat.",
     Email: <a href="mailto:ali.mohamad@dci-student.org" className='author-email'>mohamad@dci-student.org</a>
   }
+  
 ];
 
 function Author() {
