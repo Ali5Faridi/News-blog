@@ -1,12 +1,13 @@
 import React from "react";
 import { FaFacebook, FaXTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa6";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
         <nav>
-          <a href="#">About Us</a>
+          <Link to="/about">About Us</Link> {/* Use Link for About Us */}
           <a href="#">Privacy Policy</a>
           <a href="#">Contact</a>
         </nav>

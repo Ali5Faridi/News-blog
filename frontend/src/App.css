@@ -74,6 +74,7 @@ div.post p.summary{
 
 form.login, form.register{
   max-width: 400px;
+  height: 100vh;
   margin: 0 auto;
   padding-bottom: 300px;
 }
@@ -353,5 +354,71 @@ div.post:hover {
 .author-email {
   text-decoration: none; /* Removes the underline */
 }
+
+/* About Page Style */
+.about-page {
+  max-width: 800px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.github-profiles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile:hover {
+  transform: translateY(-10px);
+}
+
+.github-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.profile a {
+  text-decoration: none;
+  color: #333;
+}
+
+.profile a:hover {
+  color: #0077b5;
+}
+
+
+
+
+
+
 
 
