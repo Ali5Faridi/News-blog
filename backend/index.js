@@ -15,8 +15,10 @@ import Post from './models/Post.js';  // مدل پست
 
 dotenv.config();
 const app = express();
+app.use(express.static('dist'));
 const secret = process.env.SECRET;
 const salt = bcrypt.genSaltSync(10);
+
 
 // تنظیمات Cloudinary
 const cloudinary = cloudinaryModule.v2;
@@ -41,6 +43,7 @@ const uploadMiddleware = multer({ storage });
 app.use(cors({ credentials: true, origin: 'http://localhost:5173' }));
 app.use(express.json());
 app.use(cookieParser());
+
 
 // اتصال به دیتابیس MongoDB
 mongoose.connect(process.env.MONGOOSE_CONNECT)
@@ -166,10 +169,11 @@ app.get('/post/:id', async (req, res) => {
   res.json(postDoc);
 });
 
+
 // **📌 شروع سرور**
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
-  console.log(`🚀 Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
 
 

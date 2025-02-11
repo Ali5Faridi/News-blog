@@ -11,6 +11,8 @@ import Author from "./components/Author";
 import AboutPage from "./components/AboutPage";
 import { UserProvider } from "./UserContext"; // وارد کردن UserProvider
 
+
+
 function App() {
   return (
     <UserProvider> {/* استفاده از UserProvider با U بزرگ */}
@@ -24,6 +26,7 @@ function App() {
           <Route path="/edit/:id" element={<EditPost />} />
           <Route path="/author/:id" element={<Author />} />
           <Route path="/about" element={<AboutPage />} />
+         
         </Route>
       </Routes>
     </UserProvider>
