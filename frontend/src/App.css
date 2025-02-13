@@ -58,14 +58,14 @@ div.post div.texts a{
 }
 div.post p.info{
   margin:24px 0;
-  color: #888;
+  color: var(--card-border);
   font-size:1rem;
   font-weight: bold;
   display: flex;
   gap: 10px;
 }
 div.post p.info a.author{
-  color:#333;
+  color:var(--card-text);
 }
 div.post p.summary{
   margin:10px 0;
@@ -85,17 +85,17 @@ input{
   margin-bottom: 5px;
   width: 100%;
   padding: 5px 7px;
-  border: 2px solid #ddd;
+  border: 2px solid var(--background-color);
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--background-color);
 }
 button{
   cursor: pointer;
   width: 100%;
   display: block;
-  background-color: #555;
+  background-color: var(--button-hover-bg);
   border:0;
-  color: #fff;
+  color: var(--background-color);
   border-radius: 5px;
   padding: 7px 0;
 }
@@ -114,7 +114,7 @@ div.post-page div.image img{
   width: 100%;
 }
 div.post-page a{
-  color:#333;
+  color:var(--text-color);
   text-decoration: underline;
 }
 div.post-page h1{
@@ -125,7 +125,7 @@ div.post-page time{
   text-align: center;
   display: block;
   font-size:1rem;
-  color:#aaa;
+  color:var(--input-border);
   margin: 10px 0;
 }
 div.post-page div.author{
@@ -146,11 +146,11 @@ div.edit-row{
   margin-bottom: 20px;
 }
 div.post-page a.edit-btn{
-  background-color: #333;
+  background-color: var(--card-border);
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  color: #fff;
+  color: var(--text-color);
   padding:15px 30px;
   border-radius: 5px;
   text-decoration: none;
@@ -160,9 +160,9 @@ a svg{
 }
 
 .ql-toolbar.ql-snow + .ql-container.ql-snow{
-  border: 2px solid #ddd;
+  border: 2px solid var(--card-text);
   border-radius: 5px;
-  background-color: rgb(248, 245, 250);
+  background-color: var(--card-border);
   height: 200px;
 }
 
@@ -172,10 +172,10 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: var(--header-bg);
   z-index: 100;
   padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px var(--box-shadow);
 }
 
 header a {
@@ -196,9 +196,9 @@ header nav {
 
 
 footer {
-  background-color: #f5f5f5;
+  background-color: var(--footer-bg);
   padding: 20px 10px;
-  border-top: 2px solid #ddd;
+  border-top: 2px solid var(--input-border);
   text-align: center;
   position: sticky;
   bottom: 0;
@@ -217,11 +217,11 @@ footer .footer-container {
   position: sticky;
   bottom: 0;
   width: 100%;
-  background-color: #e2e0e0;
+  background-color: var(--footer-bg);
   padding: 20px 10px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--input-border);
   text-align: center;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -2px 5px var(--box-shadow);
 }
 .footer-container {
   max-width: 960px;
@@ -235,7 +235,7 @@ footer .footer-container {
 /* لینک‌های فوتر */
 .footer-container nav a {
   margin: 0 10px;
-  color: #555;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -260,7 +260,7 @@ footer .footer-container {
   color: #125ABE;
 }
 .social-icons .x {
-  color: #000000; 
+  color: var(--text-color); 
 }
 .social-icons .x:hover {
   color: #333333;
@@ -311,35 +311,35 @@ a {
 }
 
 a:hover {
-  color: #007bff;
+  color: var(--button-hover-bg);
 }
 
 /* سربرگ */
 header {
-  background-color: #e2e0e0;
+  background-color: var(--header-bg);
   padding: 15px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px var(--box-shadow);
 }
 
 /* دکمه‌ها */
 button {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--button-bg);
+  color: var(--background-color);
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: var(--button-hover-bg);
 }
 
 /* استایل پست‌ها */
 div.post {
-  background: white;
+  background: var(--card-bg);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px var(--box-shadow);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -385,10 +385,10 @@ div.post:hover {
 }
 
 .profile {
-  background-color: #f9f9f9;
+  background-color: var(--card-bg);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--input-border);
   transition: transform 0.3s ease;
 }
 
@@ -410,11 +410,11 @@ div.post:hover {
 
 .profile a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
 }
 
 .profile a:hover {
-  color: #0077b5;
+  color: var(--button-hover-bg);
 }
 
 /* Light Theme (Default) */
@@ -429,8 +429,6 @@ div.post:hover {
   --input-border: #ddd;
   --input-focus-border: #0077b5;
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --background-color: #ffffff;
-  --text-color: #000000;
   --card-bg: #ffffff;
   --card-text: #000000;
   --card-border: #ddd;
@@ -449,8 +447,6 @@ div.post:hover {
   --input-border: #555555;
   --input-focus-border: #1e90ff;
   --box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  --background-color: #121212;
-  --text-color: #ffffff;
   --card-bg: #1e1e1e;
   --card-text: #ffffff;
   --card-border: #333;
