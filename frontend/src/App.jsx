@@ -9,6 +9,7 @@ import PostPage from "./components/PostPage";
 import EditPost from "./components/EditPost";
 import Author from "./components/Author";
 import AboutPage from "./components/AboutPage";
+import ThemeToggle from "./ThemeToggle";
 import { UserProvider } from "./UserContext"; // وارد کردن UserProvider
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/edit/:id" element={<EditPost />} />
           <Route path="/author/:id" element={<Author />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/themetoggle" element={<ThemeToggle />} />
          
         </Route>
       </Routes>

@@ -2,6 +2,7 @@ import React from 'react';
 import { format } from 'date-fns';
 import { Link } from 'react-router-dom';
 
+
 function Post({_id, title, summary, createdAt, cover, content, author }) {
   let formattedDate = '';
   
@@ -18,10 +19,12 @@ function Post({_id, title, summary, createdAt, cover, content, author }) {
 
   return (
     <div className='post'>
+      
       <div className="image">
         <Link to={`/post/${_id}`}>
         <img src={cover} alt="Post Cover" /> {/* استفاده از URL کامل Cloudinary */}
         </Link>
+        
       </div>
       <div className="texts">
         <Link to={`/post/${_id}`}>

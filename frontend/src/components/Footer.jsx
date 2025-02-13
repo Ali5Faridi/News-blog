@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <nav>
-          <Link to="/about">About Us</Link> {/* Use Link for About Us */}
+          <Link to="/about" target="blank">About Us</Link> {/* Use Link for About Us */}
           <a href="#">Privacy Policy</a>
           <a href="#">Contact</a>
         </nav>

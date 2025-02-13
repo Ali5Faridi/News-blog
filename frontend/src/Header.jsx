@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { UserContext } from './UserContext';
+import ThemeToggle from './ThemeToggle';
 
 
 function Header() {
@@ -30,24 +31,24 @@ function Header() {
  
   return (
     <header>
-    <Link to ="/" className='logo'>Home</Link>
-   <nav>
-    {username && (
-      <>
-      <Link to="/create">New Article</Link>
-      <a onClick={logout}>Exit</a>
-      
-      </>
-    )}
-    {!username && (
-      <>
-      <Link to="/login">Login</Link>
-      <Link to="/register">Register</Link>
-      </>
-     )}   
-   </nav>
- </header>
+      <Link to="/" className="logo">Home</Link>
+      <nav>
+        <ThemeToggle /> {/* Add the ThemeToggle component */}
+        {username && (
+          <>
+            <Link to="/create">New Article</Link>
+            <a onClick={logout}>Exit</a>
+          </>
+        )}
+        {!username && (
+          <>
+            <Link to="/login">Login</Link>
+            <Link to="/register">Register</Link>
+          </>
+        )}
+      </nav>
+    </header>
   );
 }
 
-export default Header
+export default Header;
